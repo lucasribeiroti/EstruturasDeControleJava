@@ -10,13 +10,14 @@ public class IfAndElse {
         System.out.print("Informe a média: ");
         double media = entrada.nextDouble();
 
-        if (media > 10) {
+        boolean criterioAprovacao = media >= 7;
+        boolean criterioReprovacao = media <= 4;
+
+        if (media < 0 || media > 10) {
             System.out.println("Média inválida!");
-        }else if (media < 0) {
-            System.out.println("Média inválida!");
-        }else if (media >= 7){
+        }else if (criterioAprovacao){
             System.out.println("Você está de aprovado!");
-        }else if (media <= 4){
+        }else if (criterioReprovacao){
             System.out.println("Você está reprovado!");
         }else{
             System.out.println("Você está de recuperação! ");
