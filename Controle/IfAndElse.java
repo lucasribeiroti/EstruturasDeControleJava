@@ -1,28 +1,24 @@
 package Controle;
 
-import java.util.Scanner;
+import javax.swing.*;
 
 public class IfAndElse {
 
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+        String valor = JOptionPane.showInputDialog("Informe o número: ");
+        int numero = Integer.parseInt(valor);
 
-        System.out.print("Informe a média: ");
-        double media = entrada.nextDouble();
-
-        boolean criterioAprovacao = media >= 7;
-        boolean criterioReprovacao = media <= 4;
-
-        if (media < 0 || media > 10) {
-            System.out.println("Média inválida!");
-        }else if (criterioAprovacao){
-            System.out.println("Você está de aprovado!");
-        }else if (criterioReprovacao){
-            System.out.println("Você está reprovado!");
+        if (numero % 2 == 0) {
+            System.out.println("Esse número é par!");
         }else{
-            System.out.println("Você está de recuperação! ");
+            System.out.println("Esse número é impar!");
         }
 
-        entrada.close();
+        /*
+        if (numero % 2 == 0) -> com ou sem chaves
+            System.out.println("Esse número é par!");
+        else -> com ou sem chaves
+            System.out.println("Esse número é ímpar!");
+         */
     }
 }
