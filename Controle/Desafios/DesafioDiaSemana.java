@@ -23,7 +23,7 @@ public class DesafioDiaSemana {
             System.out.println(5);
         }else if ("sexta".equalsIgnoreCase(dia)) {
             System.out.println(6);
-        }else if ("sábado".equalsIgnoreCase(dia)) {
+        }else if (dia.equalsIgnoreCase("sábado")) { // desse modo também funciona
             System.out.println(7);
         } else {
             System.out.println("Resposta inválida!");
@@ -32,3 +32,6 @@ public class DesafioDiaSemana {
         entrada.close();
     }
 }
+/*
+Não use == com String em comparação com String, ou use o .equals ou o .equalsIgnoreCase
+ */
