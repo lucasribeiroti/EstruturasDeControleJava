@@ -14,7 +14,7 @@ public class DesafioWhile {
         while (nota != -1) {
             System.out.print("Informe a nota ou digite -1 para sair: ");
             nota = entrada.nextDouble();
-            if (nota > 0 && nota < 10){
+            if (nota >= 0 && nota <= 10){
                 total += nota;
                 qtdeNotas ++;
             } else if (nota != -1) {
