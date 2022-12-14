@@ -10,8 +10,7 @@ public class If {
         System.out.print("Informe a média: ");
         double media = entrada.nextDouble();
 
-        //boolean criterioAprovacaoAtingido = media <= 10.0 && media >= 7.0
-        if (media <= 10.0 && media >= 7.0) { // if (criterioAprovacaoAtingido) {
+        if (media <= 10.0 && media >= 7.0) {
             System.out.println("Aprovado!");
             System.out.println("Parabéns!!");
         }
@@ -30,6 +29,10 @@ public class If {
 /*
 Executar mais de uma sentença do if, o ideal é que esteja dentro de um bloco {
 }
+
 Se queremos executar de forma condicional apenas uma sentença não precisamos ter um bloco associado, porém
 não há problema também se utilizarmos.
+
+        boolean criterioAprovacaoAtingido = media <= 10.0 && media >= 7.0
+        if (criterioAprovacaoAtingido) {
  */

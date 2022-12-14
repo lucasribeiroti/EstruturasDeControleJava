@@ -9,8 +9,8 @@ public class While2 {
 
         String digitar = "";
 
-        while (!digitar.equalsIgnoreCase("sair")) {
-            System.out.print("Digita algo ae: ");
+        while(!digitar.equalsIgnoreCase("sair")) {
+            System.out.print("Digita algo ou digite [sair] para parar: ");
             digitar = entrada.nextLine();
         }
         System.out.println("Ate logo!");
